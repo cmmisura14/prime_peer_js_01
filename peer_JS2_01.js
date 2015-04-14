@@ -63,3 +63,33 @@ maryCody = parseInt(maryCody);
 
 console.log(value);
 console.log(maryCody);
+
+value = value + maryCody;
+
+if (value < 60) {
+	value = 14;
+} else if (value == 2930){
+	value = 27;
+} else {
+	value = 2;
+}
+
+i = 10;
+
+while (i > 0) {
+	value++;
+	i--;
+}
+
+function minusOne(val) {
+	val = val.toString();
+	if (val.length > 1){
+		val = val.slice(1, val.length);
+	}
+	value = val;
+	return val;
+}
+
+minusOne(value);
+console.log(value);
+
